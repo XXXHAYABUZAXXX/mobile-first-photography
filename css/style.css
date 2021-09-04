@@ -79,7 +79,21 @@ main #landing-text-inner a:hover {
 
 main #landing-image {
   height: 50vh;
-  background: url(https://source.unsplash.com/De8wMYoSSBc) no-repeat center;
+  background: url("https://source.unsplash.com/De8wMYoSSBc") no-repeat center;
   background-size: cover;
+}
+
+main #images #header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+main #images #header h2 {
+  display: inline-block;
+  border-left: 1px dotted #fff;
+  border-right: 1px dotted #fff;
+  padding: 0 1rem;
 }
 /*# sourceMappingURL=style.css.map */
