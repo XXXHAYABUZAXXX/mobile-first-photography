@@ -60,5 +60,19 @@ main {
         padding: 0 1rem;
       }
     }
+
+    .caption {
+      padding: 0.8rem;
+      text-align: center;
+
+      h3 {
+        text-transform: capitalize;
+        margin: 1rem 0;
+      }
+
+      p {
+        margin: 1rem 0;
+      }
+    }
   }
 }

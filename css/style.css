@@ -96,4 +96,29 @@ main #images #header h2 {
   border-right: 1px dotted #fff;
   padding: 0 1rem;
 }
+
+main #images .caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+main #images .caption h3 {
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
+main #images .caption p {
+  margin: 1rem 0;
+}
+
+footer {
+  color: #333;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer h3 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=style.css.map */
