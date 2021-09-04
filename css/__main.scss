@@ -37,5 +37,11 @@ main {
         }
       }
     }
+
+    &-image {
+      height: 50vh;
+      background: url(https://source.unsplash.com/De8wMYoSSBc) no-repeat center;
+      background-size: cover;
+    }
   }
 }
