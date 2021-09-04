@@ -43,6 +43,15 @@ main #landing {
   background: #fff;
 }
 
+@media (min-width: 500px) {
+  main #landing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+  }
+}
+
 main #landing-text {
   height: 50vh;
   display: -webkit-box;
@@ -56,6 +65,15 @@ main #landing-text {
           align-items: center;
   text-align: center;
   padding: 0 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40vw;
+          flex: 0 1 40vw;
+}
+
+@media (min-width: 500px) {
+  main #landing-text {
+    height: 100%;
+  }
 }
 
 main #landing-text-inner h2 {
@@ -73,14 +91,29 @@ main #landing-text-inner a {
   transition: background 500ms ease-in;
 }
 
+@media (min-width: 700px) {
+  main #landing-text-inner a {
+    padding: 1rem 3rem;
+  }
+}
+
 main #landing-text-inner a:hover {
   background: #f4f4f4;
 }
 
 main #landing-image {
   height: 50vh;
-  background: url("https://source.unsplash.com/De8wMYoSSBc") no-repeat center;
+  background: url("/image/image1.jpg") no-repeat center;
   background-size: cover;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60vw;
+          flex: 0 1 60vw;
+}
+
+@media (min-width: 500px) {
+  main #landing-image {
+    height: 100%;
+  }
 }
 
 main #images #header {

@@ -7,6 +7,12 @@ main {
   #landing {
     background: $clr-white;
 
+    //responsive screen sizes 500px and up
+    @media (min-width: 500px) {
+      display: flex;
+      height: 100vh;
+    }
+
     &-text {
       height: 50vh;
       display: flex;
@@ -14,6 +20,13 @@ main {
       align-items: center;
       text-align: center;
       padding: 0 1rem;
+
+      flex: 0 1 40vw;
+
+      //responsive screen sizes 500px and up
+      @media (min-width: 500px) {
+        height: 100%;
+      }
 
       &-inner {
         h2 {
@@ -31,6 +44,11 @@ main {
           // hover effect
           transition: background 500ms ease-in;
 
+          //responsive screen sizes 700px and up
+          @media (min-width: 700px) {
+            padding: 1rem 3rem;
+          }
+
           &:hover {
             background: $clr-lightgray;
           }
@@ -40,9 +58,15 @@ main {
 
     &-image {
       height: 50vh;
-      background: url("https://source.unsplash.com/De8wMYoSSBc") no-repeat
-        center;
+      background: url("/image/image1.jpg") no-repeat center;
       background-size: cover;
+
+      flex: 0 1 60vw;
+
+      //responsive screen sizes 500px and up
+      @media (min-width: 500px) {
+        height: 100%;
+      }
     }
   }
 
