@@ -2,5 +2,40 @@
 main {
   max-width: 900px;
   margin: auto;
-  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 30px 0 30px rgba(0, 0, 0, 0.1), -30px 0 30px rgba(0, 0, 0, 0.1);
+
+  #landing {
+    background: $clr-white;
+
+    &-text {
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 1rem;
+
+      &-inner {
+        h2 {
+          color: $clr-gray;
+        }
+
+        a {
+          display: inline-block;
+          border: 1px solid $clr-lineborder;
+          border-radius: 50px;
+          color: $clr-darkgray;
+          padding: 0.5rem 2rem;
+          margin: 2rem;
+
+          // hover effect
+          transition: background 500ms ease-in;
+
+          &:hover {
+            background: $clr-lightgray;
+          }
+        }
+      }
+    }
+  }
 }

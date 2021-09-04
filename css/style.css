@@ -35,7 +35,45 @@ img {
 main {
   max-width: 900px;
   margin: auto;
-  -webkit-box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
-          box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 30px 0 30px rgba(0, 0, 0, 0.1), -30px 0 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 30px 0 30px rgba(0, 0, 0, 0.1), -30px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+main #landing {
+  background: #fff;
+}
+
+main #landing-text {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+main #landing-text-inner h2 {
+  color: #888;
+}
+
+main #landing-text-inner a {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  color: #333;
+  padding: 0.5rem 2rem;
+  margin: 2rem;
+  -webkit-transition: background 500ms ease-in;
+  transition: background 500ms ease-in;
+}
+
+main #landing-text-inner a:hover {
+  background: #f4f4f4;
 }
 /*# sourceMappingURL=style.css.map */
